@@ -1,0 +1,38 @@
+{
+    "short_name": "Eksamen Timer",
+    "name": "Eksamen Timer",
+    "icons": [
+      {
+        "src": "icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      },
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "3645x3645",
+        "purpose": "maskable"
+      }
+    ],
+    "start_url":"https://wesse206.github.io/EksamenTimer",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/EksamenTimer/",
+    "theme_color": "white",
+    "description": "Durbanville se eie Eksamen Timer vir skryf lokale",
+    "screenshots": [
+        {
+          "src": "screenshot1.png",
+          "type": "image/png",
+          "sizes": "1597x725",
+          "form_factor": "wide"
+        },
+        {
+            "src": "screenshot2.png",
+            "type": "image/png",
+            "sizes": "929x725",
+            "form_factor": "narrow"
+          }
+    ]
+  }

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="af">
+
+<head>
+  <title>NSS Antwoordblad</title>
+  <link rel="icon" type="image/x-icon" href="icon.ico" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NSS Antwoordblad templaat" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="author" content="Wessel Steenkamp" />
+</head>
+
+<body>
+   
+  <!-- Antwoordblad -->
+  <table>
+    <td>Opskrif</td>
+  </table>
+
+  <!-- Navigation at the bottom of the page -->
+
+  <a class="w3-white w3-bottom w3-button w3-right w3-margin w3-round-large " style="width: 10%;"><img
+      class="w3-image w3-center" width="100%" src="./settings.png" alt="Settings" onclick="settings()" /></a>
+
+
+  <dialog style="padding: 0; width: 80%;" id="settings">
+    <div style="display: block;">
+      <div class="w3-cell w3-button w3-right" onclick="closeSettings()">X</div>
+
+      <div class="w3-cell-middle w3-padding">
+        <h1 class="w3-text">Antwoordblad Instellings</h1>
+        <hr />
+        <div class="w3-cell-row" style="display: inline;">
+          <h3 class="w3-text w3-cell w3-padding w3-center">Vak</h3>
+          <div class="w3-cell w3-right">
+            <input class="w3-padding w3-margin" style="width: 200px;" id="vak" type="text" placeholder="Vak se Naam" />
+          </div>
+        </div>
+        <div class="w3-cell-row" style="display: inline;">
+          <h3 class="w3-text w3-cell w3-padding w3-center">Leerdernaam</h3>
+          <div class="w3-cell w3-right">
+            <input class="w3-padding w3-margin" style="width: 200px;" id="leerdernaam" type="text"
+              placeholder="Naam en Van" />
+          </div>
+        </div>
+        <div class="w3-cell-row" style="display: inline;">
+          <h3 class="w3-text w3-cell w3-padding w3-center">Klas/Seksie</h3>
+          <div class="w3-cell w3-right">
+            <input class="w3-padding w3-margin" style="width: 200px;" id="seksie" type="text" placeholder="Klas" />
+          </div>
+        </div>
+        <div class="w3-cell-row" style="display: inline;">
+          <h3 class="w3-text w3-cell w3-padding w3-center">Onderwyser Kode</h3>
+          <div class="w3-cell w3-right">
+            <input class="w3-padding w3-margin" style="width: 200px;" id="onderwyserkode" type="text"
+              placeholder="Onderwyser Kode" />
+          </div>
+        </div>
+        <div class="w3-cell-row" style="display: inline;">
+          <h3 class="w3-text w3-cell w3-padding w3-center">Datum</h3>
+          <div class="w3-cell w3-right">
+            <input class="w3-padding w3-margin" style="width: 200px;" id="datum" type="text" placeholder="Datum" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Javascript file for the settings. The app is semi-useless without it. -->
+  <script type="text/javascript" src="antwoordblad.js"></script>
+
+</body>
+
+</html>
