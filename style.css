@@ -1,118 +1,45 @@
-.timer {
-    font-size: 15vw; 
-    display: none; 
-    justify-content: center;
+
+
+table, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 0.9vw;
 }
 
-.timeInputBox{
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center;
+.fieldtitle {
+    padding-left: 1vw; 
+    padding-right: 1vw;
+    width: 15vw;
 }
 
-.timeInput {
-    font-size: 15vw; 
-    width: 25vw;
+.formblock {
+    width: 4vw; 
+    height: 4vw;
 }
 
-.timerStartStop {
-    font-size: 2.5vw;
+.dateblock {
+    width: 28vw;
+    height: 4vw;
 }
 
-.progressbarOutline {
-    overflow: hidden; 
-    display: block; 
-    text-align: center; 
-    position: relative;
+.booksblock {
+    width: 5vw;
+    height: 4vw; 
+    text-align: center;
 }
 
-.progressbarBar {
-    height: 50px; 
-    width: 0%; 
-    padding: 0;
+.subjectblock {
+    width: 64.4vw;
+    height: 4vw;  
 }
 
-.progressbarText {
-    position: absolute; 
-    top: 25%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
+.invisible {
+    border: none;
+    margin: none;
+    padding: 0px;
+
 }
 
-.riglyneText{
-    font-size: 4vh;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #000000;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #000000;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-@keyframes flashProgress {
-    0% { opacity: 100%; }
-    50% { opacity: 0%; }
-    100% { opacity: 100%; }
-}
-
-.flash {
-    animation-name: flashProgress;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;   
+.center {
+    text-align: center;
 }
