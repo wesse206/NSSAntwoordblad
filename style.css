@@ -10,8 +10,8 @@ section {
 
 .fieldtitle {
     padding-left: 1vw; 
-    padding-right: 1vw;
-    width: 15vw;
+    padding-right: 1.1vw;
+    width: 14vw;
 }
 
 .formblock {
@@ -19,11 +19,13 @@ section {
     height: 4vw;
     font-size: 2vw;
     text-align: center;
+    padding: 0;
 }
 
 .dateblock {
     width: 28vw;
     height: 4vw;
+    padding-right: 12px;
 }
 
 .ofblock {
@@ -39,7 +41,8 @@ section {
 }
 
 .subjectblock {
-    width: 64.4vw;
+    width: 64vw;
+    padding-right: 5px;
     height: 4vw;  
 }
 
@@ -47,7 +50,12 @@ section {
     border: none;
     margin: none;
     padding: 0px;
+}
 
+.invisiblecell {
+    border: none;
+    margin: none;
+    padding-left: 2px;
 }
 
 .settings {
