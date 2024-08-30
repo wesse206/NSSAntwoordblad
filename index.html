@@ -33,19 +33,19 @@
       <table>
         <tr>
           <td class="fieldtitle">EXAMINATION NUMBER <br /> ESKAMENNOMMER</td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
-          <td class="formblock"></td>
+          <td id="e1" class="formblock"></td>
+          <td id="e2" class="formblock"></td>
+          <td id="e3" class="formblock"></td>
+          <td id="e4" class="formblock"></td>
+          <td id="e5" class="formblock"></td>
+          <td id="e6" class="formblock"></td>
+          <td id="e7" class="formblock"></td>
+          <td id="e8" class="formblock"></td>
+          <td id="e9" class="formblock"></td>
+          <td id="e10" class="formblock"></td>
+          <td id="e11" class="formblock"></td>
+          <td id="e12" class="formblock"></td>
+          <td id="e13" class="formblock"></td>
         </tr>
       </table>
       <br />
@@ -55,7 +55,7 @@
             <table>
               <tr>
                 <td class="fieldtitle">DATE <br /> DATUM</td>
-                <td class="dateblock"></td>
+                <td id="dateblock" class="dateblock"></td>
               </tr>
             </table>
           </td>
@@ -64,9 +64,9 @@
             <table>
               <tr>
                 <td class="fieldtitle">BOOK NUMER <br /> BOEKNOMMER</td>
-                <td class="formblock"></td>
+                <td id="booknumberblock" class="formblock"></td>
                 <td class="ofblock">OF <br /> VAN</td>
-                <td class="formblock"></td>
+                <td id="booksblock" class="formblock"></td>
                 <td class="booksblock">BOOKS <br /> BOEKE</td>
               </tr>
             </table>
@@ -81,11 +81,11 @@
             <table>
               <tr>
                 <td class="fieldtitle">SUBJECT CODE <br /> VAKKODE</td>
-                <td class="formblock"></td>
-                <td class="formblock"></td>
-                <td class="formblock"></td>
-                <td class="formblock"></td>
-                <td class="formblock"></td>
+                <td id="s1" class="formblock"></td>
+                <td id="s2"  class="formblock"></td>
+                <td id="s3"  class="formblock"></td>
+                <td id="s4"  class="formblock"></td>
+                <td id="s5"  class="formblock"></td>
               </tr>
             </table>
           </td>
@@ -96,8 +96,7 @@
             <table>
               <tr>
                 <td class="fieldtitle">PAPER NUMBER <br /> VRAESTELNOMMER</td>
-                <td class="formblock"></td>
-
+                <td id="papernumberblock" class="formblock"></td>
               </tr>
             </table>
           </td>
@@ -107,8 +106,8 @@
       <br />
       <table>
         <tr>
-          <td class="fieldtitle">CENTRE NUMBER <br /> SENTRUMNOMMER</td>
-          <td class="subjectblock"></td>
+          <td class="fieldtitle">SUBJECT NAME <br /> VAKNAAM</td>
+          <td id="subjectnameblock" class="subjectblock"></td>
         </tr>
       </table>
 
@@ -122,17 +121,68 @@
 
   <dialog id="settings">
 
-      <div class="closeSettings" onclick="closeSettings()">x</div>
-        <h1>Antwoordblad Instellings</h1>
-        <hr />
-        <table>
-          <td>
-            <p>CENTRE NUMBER <br /> SENTRUMNOMMER</p>
-          </td>
-          <td>
-            <input id="centrenumber" type="text" placeholder="CENTRE NUMBER / SENTRUMNOMMER" maxlength="7"/>
-          </td>
-        </table>
+    <div class="closeSettings" onclick="closeSettings()">x</div>
+    <h1>Antwoordblad Instellings</h1>
+    <hr />
+    <table>
+      <tr>
+        <td>
+          <p>CENTRE NUMBER <br /> SENTRUMNOMMER</p>
+        </td>
+        <td>
+          <input id="centrenumber" type="text" placeholder="CENTRE NUMBER / SENTRUMNOMMER" maxlength="7" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>EXAMINATION NUMBER <br /> ESKAMENNOMMER</p>
+        </td>
+        <td>
+          <input id="examinationnumber" type="text" placeholder="EXAMINATION NUMBER / ESKAMENNOMMER" maxlength="13" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>DATE <br /> DATUM</p>
+        </td>
+        <td>
+          <input id="date" type="text" placeholder="DATE / DATUM" maxlength="25" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>BOOK NUMER <br /> BOEKNOMMER</p>
+        </td>
+        <td>
+          <input id="books" class="books" type="text" placeholder="BOOKS / BOEKE" maxlength="2" />
+          <input id="booknumber" class="books" type="text" placeholder="BOOK NUMBER / BOEKNOMMER" maxlength="2" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>SUBJECT CODE <br /> VAKKODE</p>
+        </td>
+        <td>
+          <input id="subjectcode" type="text" placeholder="SUBJECT CODE / VAKKODE" maxlength="5" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>PAPER NUMBER <br /> VRAESTELNOMMER</p>
+        </td>
+        <td>
+          <input id="papernumber" type="text" placeholder="PAPER NUMBER / VRAESTELNOMMER" maxlength="1" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>SUBJECT NAME <br /> VAKNAAM</p>
+        </td>
+        <td>
+          <input id="subjectname" type="text" placeholder="SUBJECT NAME / VAKNAAM" maxlength="25" />
+        </td>
+      </tr>
+    </table>
 
   </dialog>
 
